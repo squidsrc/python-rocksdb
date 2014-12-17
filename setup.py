@@ -13,11 +13,12 @@ extension_defaults = {
     ],
     'language': 'c++',
     'libraries': [
-        'rocksdb',
+        'rt',
         'snappy',
         'bz2',
         'z'
-    ]
+    ],
+    'extra_objects': ['librocksdb.a']
 }
 
 mod1 = Extension(
